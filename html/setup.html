@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/setup.css" />
+    <title>Select Track, Car, and Mode</title>
+  </head>
+  <body>
+    <div class="screen">
+      <div class="menu">
+        <h1>Select Your Race</h1>
+
+        <div class="selection-container">
+          <!-- Track Selection -->
+          <div id="level-selection" class="selection-section">
+            <h2>Select Level</h2>
+            <button class="select-btn" onclick="selectLevel('Level 1')">Level 1</button>
+            <button class="select-btn" onclick="selectLevel('Level 2')">Level 2</button>
+            <button class="select-btn" onclick="selectLevel('Level 3')">Level 3</button>
+          </div>
+
+          <!-- Car Selection -->
+          <div id="car-selection" class="selection-section hidden">
+            <h2>Select Car</h2>
+            <button class="select-btn" onclick="selectCar('Car A')">Car A</button>
+            <button class="select-btn" onclick="selectCar('Car B')">Car B</button>
+            <button class="select-btn" onclick="selectCar('Car C')">Car C</button>
+          </div>
+        </div>
+
+        <!-- Start Button (appears after mode selection) -->
+        <div id="start-section" class="hidden">
+          <button class="select-btn start-btn" onclick="startGame()">Start Race</button>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+          <p>Press <strong>C</strong> to read controls</p>
+          <p>Press <strong>G</strong> to read game aim</p>
+          <button class="back-btn" onclick="goBack()">Cancel and Go Back</button>
+        </div>
+
+        <!-- Pop-up for Controls -->
+        <div id="controls-popup" class="popup hidden">
+          <h3>Controls</h3>
+          <p>Use Arrow keys or WASD to move the car.</p>
+          <p>Press Space to brake.</p>
+          <button onclick="closePopup('controls-popup')">Close</button>
+        </div>
+
+        <!-- Pop-up for Game Aim -->
+        <div id="game-aim-popup" class="popup hidden">
+          <h3>Game Aim</h3>
+          <p>Complete the track as fast as possible before the time runs out without hitting obstacles.</p>
+          <button onclick="closePopup('game-aim-popup')">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../javascript/setup.js"></script>
+  </body>
+</html>

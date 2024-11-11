@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/mainMenu.css" />
+    <title>Credits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #282c34;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .screen {
+            background-color: rgba(50, 50, 50, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        .team {
+            list-style-type: none;
+            padding: 0;
+        }
+        .team li {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .select-btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            font-size: 1.5em;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            width: 80%; /* Buttons span 80% of container */
+            max-width: 400px; /* Max width to prevent buttons from being too large */
+        }
+        .select-btn:hover {
+            background-color: #ffcc00;
+            transform: scale(1.1); /* Scale on hover */
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <div class="menu">
+            <h1>Credits</h1>
+            <h2>Motivation Behind the Game</h2>
+            <p>
+                This game was created with the passion to bring excitement and challenge to racing enthusiasts. 
+                Our goal was to design an immersive experience that combines thrilling gameplay with the joy of competition. 
+                We hope this game inspires players to push their limits and enjoy every moment on the track!
+            </p>
+            <h2>Development Team</h2>
+            <ul class="team">
+                <li>Thabiso</li>
+                <li>Lupumlo</li>
+                <li>Clement</li>
+                <li>Siyabonga</li>
+                <li>Karabo</li>
+                <li>Tumelo</li>
+            </ul>
+            
+
+            <button class="select-btn" onclick="window.location.href='mainMenu.html'">Go Back</button>
+
+
+        </div>
+    </div>
+</body>
+</html>
